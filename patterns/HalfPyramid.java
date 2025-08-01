@@ -1,15 +1,16 @@
-public class Pyramid {
+public class HalfPyramid {
     public static void main(String[] args) {
         int n=5;
-        //row
         for(int i=1;i<=n;i++){
             //spaces
             for(int j=1;j<=n-i;j++){
                 System.out.print(" ");
             }
-            //numbers
+            //number
+            int number=1;
             for(int j=1;j<=i;j++){
-                System.out.print(i+" ");
+                System.out.print(number+" ");
+                number++;
             }
             System.out.println();
         }
